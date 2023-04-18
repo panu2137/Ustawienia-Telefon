@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #f1feff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .background {
+  width: 425px;
+  height: 800px;
+  position: absolute;
+  animation: gradient 5s linear infinite;
+  background: linear-gradient(125deg, rgb(54, 0, 0), rgb(0, 44, 0));
+}
+body main {
+  width: 425px;
+  height: 800px;
+  padding: 5px;
+  position: relative;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body main header h1 {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-top: 50px;
+}
+body main header .input-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body main header .input-container span {
+  position: absolute;
+  color: rgb(100, 100, 100);
+  transform: translateY(17px) translateX(10px);
+  font-size: 21px;
+}
+body main header form {
+  width: 100%;
+}
+body main header input {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: #1e1e1e 4px solid;
+  padding-left: 35px;
+  background: #1e1e1e;
+  color: white;
+}
+body main header input:focus {
+  outline: none;
+}
+body main section {
+  filter: hue-rotate(0deg) !important;
+  width: 100%;
+  line-height: 90%;
+  margin-top: 40px;
+}
+body main section .setting {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  height: 40px;
+  margin-top: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body main section .setting span {
+  filter: hue-rotate(0deg) !important;
+  font-size: 30px;
+  float: left;
+}
+body main section .setting p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+  float: left;
+  line-height: 30px;
+}
+body main section .setting .arrow {
+  color: rgb(226, 226, 226);
+  font-size: 15px;
+  float: right !important;
+  line-height: 30px;
+}
+body main section .setting:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(105%);
+}
+body main section .setting .phone {
+  color: aqua;
+}
+body main section .setting .update {
+  color: red;
+}
+body main section .setting .security {
+  color: greenyellow;
+}
+body main section .setting .task,
+body main section .setting .sun {
+  color: yellow;
+}
+body main section .setting .wi-fi {
+  color: rgb(33, 33, 255);
+}
+body main section .setting .bluetooth {
+  color: rgb(31, 255, 225);
+}
+body main section .setting .connect {
+  color: orange;
+}
+body main section .line {
+  width: 100%;
+  height: 2px;
+  background: #1e1e1e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}/*# sourceMappingURL=styles.css.map */
