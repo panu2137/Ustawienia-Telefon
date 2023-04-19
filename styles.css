@@ -16,8 +16,8 @@ body .background {
   width: 425px;
   height: 800px;
   position: absolute;
-  animation: gradient 5s linear infinite;
-  background: linear-gradient(125deg, rgb(54, 0, 0), rgb(0, 44, 0));
+  background: black;
+  border-radius: 15px;
 }
 body main {
   width: 425px;
@@ -28,27 +28,30 @@ body main {
   padding-left: 30px;
   padding-right: 30px;
 }
-body main header h1 {
+body main header h2 {
+  text-align: center;
   font-family: sans-serif;
   color: white;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 body main header .input-container {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: -20px;
 }
-body main header .input-container span {
+body main header span {
   position: absolute;
   color: rgb(100, 100, 100);
   transform: translateY(17px) translateX(10px);
   font-size: 21px;
 }
-body main header form {
+body main form {
   width: 100%;
 }
-body main header input {
+body main input {
   margin-top: 10px;
   width: 100%;
   height: 35px;
@@ -58,16 +61,16 @@ body main header input {
   background: #1e1e1e;
   color: white;
 }
-body main header input:focus {
+body main input:focus {
   outline: none;
 }
-body main section {
+body section {
   filter: hue-rotate(0deg) !important;
   width: 100%;
   line-height: 90%;
   margin-top: 40px;
 }
-body main section .setting {
+body section .setting {
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
   transition: 0.5s;
@@ -77,12 +80,33 @@ body main section .setting {
   border-radius: 5px;
   cursor: pointer;
 }
-body main section .setting span {
+body section .setting span {
   filter: hue-rotate(0deg) !important;
   font-size: 30px;
   float: left;
 }
-body main section .setting p {
+body section .setting .Aktualizuj {
+  width: 80px;
+  float: right;
+  background-color: rgba(85, 85, 200, 0.35);
+  border-radius: 10px;
+}
+body section .setting .Aktualizuj p {
+  color: rgb(51, 153, 255);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+body section .setting .wlaczone {
+  float: right !important;
+  margin-right: 5px;
+  padding: 0;
+  font-weight: 100 !important;
+  font-size: 13px;
+}
+body section .setting p {
   color: white;
   font-family: sans-serif;
   font-weight: 600;
@@ -90,51 +114,42 @@ body main section .setting p {
   float: left;
   line-height: 30px;
 }
-body main section .setting .arrow {
+body section .setting .arrow {
   color: rgb(226, 226, 226);
   font-size: 15px;
   float: right !important;
   line-height: 30px;
 }
-body main section .setting:hover {
+body section .setting:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(105%);
 }
-body main section .setting .phone {
+body section .setting .phone {
   color: aqua;
 }
-body main section .setting .update {
+body section .setting .update {
   color: red;
 }
-body main section .setting .security {
+body section .setting .security {
   color: greenyellow;
 }
-body main section .setting .task,
-body main section .setting .sun {
+body section .setting .task,
+body section .setting .sun {
   color: yellow;
 }
-body main section .setting .wi-fi {
+body section .setting .wi-fi {
   color: rgb(33, 33, 255);
 }
-body main section .setting .bluetooth {
+body section .setting .bluetooth {
   color: rgb(31, 255, 225);
 }
-body main section .setting .connect {
+body section .setting .connect {
   color: orange;
 }
-body main section .line {
+body section .line {
   width: 100%;
   height: 2px;
   background: #1e1e1e;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-@keyframes gradient {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }/*# sourceMappingURL=styles.css.map */
